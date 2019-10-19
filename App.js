@@ -1,5 +1,6 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import { Text, View } from 'react-native';
+import Botao from './src/Componentes/Inicio';
 
 function App() {
   return (
