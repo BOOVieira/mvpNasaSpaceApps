@@ -1,6 +1,17 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
 
+// import Componente from './Componentes';
+
+{/*
+ <Componente></Componente>
+
+ ou
+
+ <Componente />
+ 
+*/}
+
 function Home(props) {
     return (
         <View>
