@@ -1,12 +1,9 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import Botao from './src/Componentes/Inicio';
+import Navigator from './src/Componentes/Navigator';
 
 function App() {
   return (
-    <View>
-      <Text>aaaaaaaaaa</Text>
-    </View>
+      <Navigator />
   );
 }
 

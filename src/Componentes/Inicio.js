@@ -6,5 +6,4 @@ export const Botao = styled.TouchableOpacity`
     fontWeight: bold;
     textAlign: center;
     color: #34495e;
-`;  
-
+`;
