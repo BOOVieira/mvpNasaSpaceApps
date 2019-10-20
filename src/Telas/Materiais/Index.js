@@ -2,6 +2,7 @@ import React from 'react';
 import { Image, View, Text, Button, SafeAreaView, FlatList } from 'react-native';
 import { Infos, Card, Titulo, Thumb, Container, CardInfos } from './Componentes'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Pesquisa from '../../Componentes/Pesquisa'
 
 const DATA = [
     {
@@ -79,13 +80,18 @@ function Item({ item }) {
 function Materiais(props) {
 
     return (
-        <Container>
-            <FlatList
-                data={DATA}
-                renderItem={({ item }) => <Item item={item} />}
-                keyExtractor={item => item.id}
-            />
-        </Container>
+        <>
+            <Pesquisa nome={'materiais disponíveis'} />
+            <Container>
+
+
+                <FlatList
+                    data={DATA}
+                    renderItem={({ item }) => <Item item={item} />}
+                    keyExtractor={item => item.id}
+                />
+            </Container>
+        </>
     );
 }
 

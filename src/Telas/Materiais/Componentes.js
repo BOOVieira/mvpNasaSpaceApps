@@ -40,7 +40,7 @@ export const Thumb = styled.Image`
 
 `; 
 
-export const Container = styled.SafeAreaView`
+export const Container = styled.ScrollView`
     background: #6ad141
 `; 
 

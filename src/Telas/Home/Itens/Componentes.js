@@ -16,13 +16,14 @@ export const CardInfos = styled.View`
 `; 
 
 
-export const Card = styled.View`
+export const Card = styled.TouchableOpacity`
     fontWeight: bold;
     textAlign: center;
     color: #34495e;
     flex-flow: row;
     margin: 15px 5px;
-    background: #ebebeb
+    background: #ebebeb;
+    border-radius: 5px;    
 `; 
 
 export const Titulo = styled.Text`
@@ -44,5 +45,10 @@ export const Container = styled.ScrollView`
     background: #6ad141
 `; 
 
-
-
+export const TituloFeed = styled.Text`
+    font-size: 25;
+    fontWeight: bold;
+    textAlign: center;
+    color: #000;
+    padding: 15px
+`;

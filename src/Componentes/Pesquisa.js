@@ -6,6 +6,7 @@ function Pesquisa({ nome }) {
     return (
         <Input
             placeholder={'Buscar ' + nome + '...' }
+            style={{ backgroundColor:"#ffffff", padding:2 }}
             leftIcon={
                 <Icon
                     name='search'
