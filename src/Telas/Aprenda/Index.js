@@ -1,7 +1,10 @@
 import React from 'react';
 import { Image, View, Text, Button, SafeAreaView, FlatList } from 'react-native';
-import { Infos, Card, Titulo, Thumb, Container, CardInfos } from './Componentes'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
+import Pesquisa from '../../Componentes/Pesquisa';
+import { Infos, Card, Titulo, Thumb, Container, CardInfos } from './Componentes';
+
 
 const DATA = [
     {
@@ -76,10 +79,13 @@ function Item({ item }) {
     );
 }
 
-function Materiais(props) {
+function Aprenda(props) {
 
     return (
         <Container>
+
+            <Pesquisa nome={'aprenda'}/>
+
             <FlatList
                 data={DATA}
                 renderItem={({ item }) => <Item item={item} />}
@@ -89,4 +95,4 @@ function Materiais(props) {
     );
 }
 
-export default Materiais;
+export default Aprenda;

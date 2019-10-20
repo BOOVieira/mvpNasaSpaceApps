@@ -76,7 +76,7 @@ function Item({ item }) {
     );
 }
 
-function Materiais(props) {
+function Arte(props) {
 
     return (
         <Container>
@@ -89,4 +89,4 @@ function Materiais(props) {
     );
 }
 
-export default Materiais;
+export default Arte;

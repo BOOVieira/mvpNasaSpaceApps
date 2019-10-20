@@ -1,22 +1,39 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import Home from '../Telas/Home/Index';
 import Materiais from '../Telas/Materiais/Index';
+import Arte from '../Telas/Arte/Index';
+import Aprenda from '../Telas/Aprenda/Index';
 
-const Navigator = createStackNavigator(
+const Navigator = createBottomTabNavigator(
   {
     Home: {
       screen: Home,
+      navigationOptions: {
+        title: 'Início',
+      }
     },
     Materiais: {
-      screen: Materiais
+      screen: Materiais,
+      navigationOptions: {
+        title: 'Materiais',
+      }
     },
-  },
-  {
-    initialRouteName: 'Home',
+    Arte: {
+      screen: Arte,
+      navigationOptions: {
+        title: 'Arte',
+      }
+    },
+    Aprenda: {
+      screen: Aprenda,
+      navigationOptions: {
+        title: 'Aprenda',
+      }
+    },
   }
 );
 
